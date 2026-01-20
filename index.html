@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="main">
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-in">
+                <h2>🌋 Productivity Dashboard</h2>
+                <div class="theme">
+                    <i class="ri-contrast-2-line" title="Change Theme"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Page -->
+        <section class="allElems">
+            <header>
+
+                <div class="header_1">
+                    <h2>20 Jan, 2026</h2>
+                    <h1>Monday, 7:00 pm</h1>
+                    <h4>Lucknow (UP)</h4>
+                </div>
+
+                <div class="header_2">
+                    <h2>24°C</h2>
+                    <h3 class="precip">Precipitation: 0%</h3>
+                    <h3 class="humidity">Humidity: 81%</h3>
+                    <h3 class="wind">Wind: 6 km/h</h3>
+                    <h3 class="condition">Clear</h3>
+                </div>
+
+            </header>
+            <div class="allFeatures">
+
+                <div class="todo elem">
+                    <img src="https://images.pexels.com/photos/8947025/pexels-photo-8947025.jpeg" alt="">
+                    <h3>To-Do List</h3>
+                </div>
+
+                <div class="daily elem">
+                    <img src="https://images.pexels.com/photos/6929004/pexels-photo-6929004.jpeg" alt="">
+                    <h3>Daily Planner</h3>
+                </div>
+
+                <div class="motiv elem">
+                    <img src="https://images.pexels.com/photos/2740954/pexels-photo-2740954.jpeg" alt="">
+                    <h3>Motivation</h3>
+                </div>
+
+                <div class="pomo elem">
+                    <img src="https://images.pexels.com/photos/19561331/pexels-photo-19561331.jpeg" alt="">
+                    <h3>Pomodoro Timer</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seperate Pages -->
+
+        <!-- ToDo Page -->
+        <section class="fullElem todo_list_fullpage">
+            <button class="back" title="Go Back"><i class="ri-close-large-fill"></i></button>
+            <h2>📝 Things to get done</h2>
+            <div class="todo_container">
+                <div class="addTask">
+
+                    <form>
+                        <input id="task-input" type="text" placeholder="What's on your mind?">
+                        <textarea name="" rows="7" cols="30" id="" placeholder="Enter Details"></textarea>
+                        <div class="mark-imp">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">Mark as Important! 📌</label>
+                        </div>
+                        <button>Add Task</button>
+                    </form>
+
+                </div>
+                <div class="allTask"></div>
+            </div>
+        </section>
+
+        <!-- Daily Planner -->
+        <section class="fullElem daily_planner_fullpage">
+            <button class="back"><i class="ri-close-large-fill"></i></button>
+            <h2>🗺️ Today's game plan</h2>
+
+            <div class="day-planner">
+
+            </div>
+
+        </section>
+
+        <!-- Motivational Page -->
+        <section class="fullElem motivational_fullpage">
+            <button class="back"><i class="ri-close-large-fill"></i></button>
+            <h2>⛽ Your Daily Fuel</h2>
+            <div class="motivation_fullPage_Container">
+                <div class="motivation_container">
+                    <div class="motivation_wrapper">
+                        <img src="./icons8-quote-50.png" alt="quotation-mark-png">
+                        <div class="motivation_1">
+                            <h2>Quotes of the Day</h2>
+                        </div>
+                        <div class="motivation_2">
+                            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nostrum ex obcaecati?</h1>
+                        </div>
+                        <div class="motivation_3">
+                            <h2>Shayaan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pomodoro Page -->
+        <section class="fullElem pomodoro_fullpage">
+            <button class="back"><i class="ri-close-large-fill"></i></button>
+            <h2>Locked-in focus mode</h2>
+
+            <div class="pomo_timer">
+                <h4 class="session">Work Session</h4>
+                <h1>25:00</h1>
+                <button class="start_timer">Start</button>
+                <button class="pause_timer">Pause</button>
+                <button class="reset_timer">Reset</button>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
