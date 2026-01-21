@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --pri: #152d35;
   --sec: #345b63;
@@ -13,8 +27,6 @@
   --floralwhite: floralwhite;
   --lemonchiffon: lemonchiffon;
 }
-
-/* p- 152D35  s- 345B63  */
 
 @font-face {
   font-family: aeonik;
@@ -48,7 +60,7 @@ body {
 }
 
 #main {
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-color: var(--tri2);
 }
@@ -101,7 +113,7 @@ nav .theme {
 
 section.allElems {
   /*no space between section and .allElems bcoz Targeted section ki class (not section mein class)*/
-  height: 100%;
+  height: 120%;
   width: 100%;
   padding: 40px;
   padding-top: 100px;
@@ -132,10 +144,10 @@ section.allElems {
 }
 
 header {
-  /* height: 300px; */
+  height: 350px;
   width: 100%;
   background-color: var(--sec);
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   border-radius: 20px;
   padding: 45px;
   display: -webkit-box;
@@ -216,14 +228,14 @@ header .header_2 h3 {
   align-items: flex-start;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .elem {
   background-color: var(--tri2);
   border-radius: 20px;
-  height: 320px;
-  width: 260px;
+  height: 380px;
+  width: 300px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -260,7 +272,7 @@ header .header_2 h3 {
 /* New pages for each */
 
 section.fullElem {
-  height: 100%;
+  height: 120%;
   width: 100%;
   display: none;
   padding: 40px;
@@ -596,14 +608,12 @@ section.motivational_fullpage > h2 {
   margin-top: 50px;
   top: 4%;
   left: 2%;
-  z-index: 9;
 }
 
 section.motivational_fullpage .back {
   position: absolute;
   top: 5%;
   margin-top: 40px;
-  z-index: 9;
 }
 
 .motivation_fullPage_Container {
@@ -786,4 +796,26 @@ section.pomodoro_fullpage {
   scale: 0.95;
   -webkit-box-shadow: -5px -5px 0px var(--black);
   box-shadow: -5px -5px 0px var(--black);
+}
+
+footer {
+  background: var(--sec2);
+  color: #ffffff;
+  padding: 10px;
+  /* text-align: start; */
+}
+
+footer .copyright{
+  border-top: 2px dashed #040319;
+  color: #1c1c1c;
+  padding-top: 10px;
+  line-height: 2;
+}
+
+footer .copyright p{
+  text-align: end;
+}
+
+footer .copyright span{
+  color: #1c1c1c;
 }

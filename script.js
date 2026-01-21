@@ -271,7 +271,7 @@ function weatherUI() {
 
   async function weatherAPICall() {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`,
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`,
     );
 
     let data = await response.json();
@@ -370,3 +370,6 @@ function changeTheme() {
 }
 
 changeTheme();
+
+
+document.getElementById('new-year').textContent = new Date().getFullYear();
