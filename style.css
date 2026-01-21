@@ -272,14 +272,18 @@ header .header_2 h3 {
 /* New pages for each */
 
 section.fullElem {
-  height: 120%;
+  height: 100vh;          
   width: 100%;
-  display: none;
+  display: none;           
   padding: 40px;
   padding-top: 80px;
   background-color: var(--sec2);
-  position: absolute;
+  position: fixed;         
+  top: 0;                  
+  left: 0;                 
+  overflow: hidden;        
 }
+
 
 .fullElem h2 {
   font-weight: 700;
@@ -739,7 +743,6 @@ section.motivational_fullpage .back {
 /* POMODORO SEPERATE PAGE */
 
 section.pomodoro_fullpage {
-  position: relative;
   background-color: var(--tri1);
 }
 

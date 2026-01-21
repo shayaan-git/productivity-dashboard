@@ -73,7 +73,7 @@ function todoList() {
     });
     renderTask();
 
-    taskCheckbox.ckecked = false;
+    taskCheckbox.checked = false;
     taskInput.value = "";
     taskDetailsInput.value = "";
   });
