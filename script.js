@@ -277,7 +277,7 @@ function weatherUI() {
     let data = await response.json();
     // console.log(data.current);
 
-    header2Temp.innerHTML = `${data.current.temp_c}<sup>°C</sup>`;
+    header2Temp.innerHTML = `${data.current.temp_c}°C`;
     header2Condition.innerHTML = `${data.current.condition.text}`;
     header2Humidity.innerHTML = `Humidity: ${data.current.humidity}%`;
     header2Wind.innerHTML = `Wind: ${data.current.wind_kph} km/h`;
